@@ -11,13 +11,17 @@
     <div class="m-auto">
       <a
         class="m-auto mr-1 bg-rose-600 pr-10 pl-10 pt-3 pb-3 rounded-full text-white text-md"
+        href="https://github.com/AminAppDevs/vue-nest-blog"
+        target="_blank"
       >
-        GitHub
+        Vue GitHub
       </a>
       <a
         class="m-auto ml-1 bg-slate-200 pr-10 pl-10 pt-3 pb-3 rounded-full text-slate-700 text-md"
+        href="https://github.com/AminAppDevs/nestjs-blog"
+        target="_blank"
       >
-        Linkedin
+        Nest Github
       </a>
     </div>
   </div>
