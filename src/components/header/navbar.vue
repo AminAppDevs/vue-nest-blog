@@ -1,7 +1,9 @@
 <template>
   <div class="bg-white pt-5 pb-5 drop-shadow-3xl pr-2 pl-2 lg:pr-0 lg:pl-0">
     <div class="flex flex-row justify-between items-center container m-auto">
-      <img src="@/assets/logo.svg" alt="" class="w-36 mr-5" />
+      <router-link to="/">
+        <img src="@/assets/logo.svg" alt="" class="w-36 mr-5"
+      /></router-link>
       <ul class="lg:flex xs:flex sm:hidden ml-5 hidden">
         <li class="mr-6 text-sm font-medium text-slate-8 hover:text-rose-600">
           <router-link to="/">Home</router-link>

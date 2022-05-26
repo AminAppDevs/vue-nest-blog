@@ -7,7 +7,7 @@
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xs:grid-cols-2"
     >
       <div v-for="(post, index) in posts" :key="post.id">
-        <div v-if="index < 10">
+        <div v-if="index < 8">
           <router-link :to="`/post/${post.id}`">
             <post-item :post="posts[index]" />
           </router-link>
