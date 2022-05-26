@@ -1,14 +1,14 @@
 <template>
-  <div class="pt-10 pb-10 bg-slate-100 mb-10">
-    <h2 class="text-3xl font-bold" :style="`color: ${category.color}`">
-      {{ category.name }}
-    </h2>
-  </div>
-  <div class="container m-auto" v-if="!loading">
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xs:grid-cols-2"
-    >
-      <div>
+  <div class="pb-10">
+    <div class="pt-16 pb-16 bg-slate-900 mb-10">
+      <h2 class="text-3xl font-bold text-white">
+        {{ category.name }}
+      </h2>
+    </div>
+    <div class="container m-auto" v-if="!loading">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xs:grid-cols-2"
+      >
         <div v-for="(post, index) in posts" :key="post.id">
           <div>
             <router-link :to="`/post/${post.id}`">
@@ -18,8 +18,8 @@
         </div>
       </div>
     </div>
+    <div v-if="loading"></div>
   </div>
-  <div v-if="loading"></div>
 </template>
 
 <script>
